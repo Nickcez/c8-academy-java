@@ -4,5 +4,3 @@ public interface ElectricPowered {
     void charge(double kWh);
     double getBatteryLevel();
 }
-
-
