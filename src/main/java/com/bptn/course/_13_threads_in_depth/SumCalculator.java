@@ -1,5 +1,6 @@
 package com.bptn.course._13_threads_in_depth;
 
+// goes with Main 2
 class SumCalculator extends Thread {
 
     // The start point of the range
