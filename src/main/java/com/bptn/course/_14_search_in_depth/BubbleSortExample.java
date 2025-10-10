@@ -23,7 +23,39 @@ public class BubbleSortExample {
 
         return myArray;
     }
+    
+    
+    static int[] optimizedBubbleSort(int myArray[]) {
+        int temp;
+        boolean swapped;
+        int counter = 0;  //  element to count quantity of steps
+        for (int i = 0; i < myArray.length - 1; i++) {
+            counter = i + 1;
+            swapped = false;
+            for (int j = 0; j < myArray.length - i - 1; j++) {
+                //  counter++;
+                if (myArray[j] > myArray[j + 1]) {
+                    //  swap arr[j] and arr[j+1]
+                    temp = myArray[j];
+                    myArray[j] = myArray[j + 1];
+                    myArray[j + 1] = temp;
+                    swapped = true;
 
+
+                }
+            }  //  counter = i;
+            //  If there weren't elements to swap in inner loop, then break
+            if (swapped == false) {
+
+
+                break;
+
+
+            }
+        }
+        System.out.println("steps quantity, optimized = " + counter);
+        return myArray;
+    }
 
 
     public static void main(String[] args) {
@@ -39,5 +71,5 @@ public class BubbleSortExample {
         System.out.println(Arrays.toString(bubbleSort(arr)));
 
 
-    }
+    }    
 }
