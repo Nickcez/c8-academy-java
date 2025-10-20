@@ -11,7 +11,7 @@ public class StudentAppClass {
     // These lines establish the variables we need to connect to our Postgres database. Note that we have our username, password, the name of the database, the port, and the URL. If any of these variables has changed in your project (e.g., you changed your password or provided a different port name), make sure you change them below. Failure to do so will result in errors:
     private static final String userName = "postgres";
     private static final String password = "pg123";
-    private static final String dbName = "postgres";
+    private static final String dbName = "bptn";
     private static final String port = "5432";
     private static final String dbUrl = "localhost";
 
