@@ -3,12 +3,12 @@ package com.bptn.course._Test;
 import java.util.LinkedList;
 
 public class Test {
-    public String name;
-
     public static void main(String[] args) {
-        Test n = new Test();
-        n.name = "Nick";
-
-        System.out.println(n);
+        for (int i = 3; i <= 9; i++) {
+            for (int j = 6; j > 0; j--) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }
