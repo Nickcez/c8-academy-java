@@ -3,7 +3,6 @@ package com.bptn.course._14_search_in_depth;
 import java.util.Arrays;
 import java.util.Stack;
 
-
 public class QuickSort
 {
     public static void swap (int[] arr, int i, int j)
@@ -95,6 +94,7 @@ public class QuickSort
 
 
 //A simple pair class in Java
+//Will be start and end of array
 class Pair
 {
     private final int x;
